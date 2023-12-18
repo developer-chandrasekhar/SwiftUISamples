@@ -13,6 +13,7 @@
 		951F4AA02B29CCD2003DF60F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 951F4A9F2B29CCD2003DF60F /* Preview Assets.xcassets */; };
 		951F4AA72B29D0FD003DF60F /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951F4AA62B29D0FD003DF60F /* util.swift */; };
 		951F4AA92B29DBC8003DF60F /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951F4AA82B29DBC8003DF60F /* GridView.swift */; };
+		953397222B30492600B1E008 /* MenuContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953397212B30492600B1E008 /* MenuContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		951F4A9F2B29CCD2003DF60F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		951F4AA62B29D0FD003DF60F /* util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
 		951F4AA82B29DBC8003DF60F /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		953397212B30492600B1E008 /* MenuContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				951F4A982B29CCD1003DF60F /* PaginationSampleSwiftUIApp.swift */,
 				951F4A9A2B29CCD1003DF60F /* ContentView.swift */,
 				951F4AA82B29DBC8003DF60F /* GridView.swift */,
+				953397212B30492600B1E008 /* MenuContainerView.swift */,
 				951F4AA62B29D0FD003DF60F /* util.swift */,
 				951F4A9C2B29CCD2003DF60F /* Assets.xcassets */,
 				951F4A9E2B29CCD2003DF60F /* Preview Content */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				953397222B30492600B1E008 /* MenuContainerView.swift in Sources */,
 				951F4AA72B29D0FD003DF60F /* util.swift in Sources */,
 				951F4A9B2B29CCD1003DF60F /* ContentView.swift in Sources */,
 				951F4AA92B29DBC8003DF60F /* GridView.swift in Sources */,
@@ -288,6 +292,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,6 +322,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
