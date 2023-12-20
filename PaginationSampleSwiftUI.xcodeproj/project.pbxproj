@@ -14,6 +14,10 @@
 		951F4AA72B29D0FD003DF60F /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951F4AA62B29D0FD003DF60F /* util.swift */; };
 		951F4AA92B29DBC8003DF60F /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951F4AA82B29DBC8003DF60F /* GridView.swift */; };
 		953397222B30492600B1E008 /* MenuContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953397212B30492600B1E008 /* MenuContainerView.swift */; };
+		953397242B3181F700B1E008 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953397232B3181F700B1E008 /* BottomSheetView.swift */; };
+		95C26B3A2B32E9DE00938C95 /* PagingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C26B392B32E9DE00938C95 /* PagingScrollView.swift */; };
+		95C26B3D2B32EF3100938C95 /* PagingView in Frameworks */ = {isa = PBXBuildFile; productRef = 95C26B3C2B32EF3100938C95 /* PagingView */; };
+		95C26B402B32FC8F00938C95 /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = 95C26B3F2B32FC8F00938C95 /* SwiftUIPager */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,8 @@
 		951F4AA62B29D0FD003DF60F /* util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
 		951F4AA82B29DBC8003DF60F /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		953397212B30492600B1E008 /* MenuContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContainerView.swift; sourceTree = "<group>"; };
+		953397232B3181F700B1E008 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		95C26B392B32E9DE00938C95 /* PagingScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95C26B402B32FC8F00938C95 /* SwiftUIPager in Frameworks */,
+				95C26B3D2B32EF3100938C95 /* PagingView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,10 +65,12 @@
 		951F4A972B29CCD1003DF60F /* PaginationSampleSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				95C26B392B32E9DE00938C95 /* PagingScrollView.swift */,
 				951F4A982B29CCD1003DF60F /* PaginationSampleSwiftUIApp.swift */,
 				951F4A9A2B29CCD1003DF60F /* ContentView.swift */,
 				951F4AA82B29DBC8003DF60F /* GridView.swift */,
 				953397212B30492600B1E008 /* MenuContainerView.swift */,
+				953397232B3181F700B1E008 /* BottomSheetView.swift */,
 				951F4AA62B29D0FD003DF60F /* util.swift */,
 				951F4A9C2B29CCD2003DF60F /* Assets.xcassets */,
 				951F4A9E2B29CCD2003DF60F /* Preview Content */,
@@ -92,6 +102,10 @@
 			dependencies = (
 			);
 			name = PaginationSampleSwiftUI;
+			packageProductDependencies = (
+				95C26B3C2B32EF3100938C95 /* PagingView */,
+				95C26B3F2B32FC8F00938C95 /* SwiftUIPager */,
+			);
 			productName = PaginationSampleSwiftUI;
 			productReference = 951F4A952B29CCD1003DF60F /* PaginationSampleSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +134,10 @@
 				Base,
 			);
 			mainGroup = 951F4A8C2B29CCD1003DF60F;
+			packageReferences = (
+				95C26B3B2B32EF3100938C95 /* XCRemoteSwiftPackageReference "PagingView" */,
+				95C26B3E2B32FC8F00938C95 /* XCRemoteSwiftPackageReference "SwiftUIPager" */,
+			);
 			productRefGroup = 951F4A962B29CCD1003DF60F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -147,10 +165,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				953397222B30492600B1E008 /* MenuContainerView.swift in Sources */,
+				95C26B3A2B32E9DE00938C95 /* PagingScrollView.swift in Sources */,
 				951F4AA72B29D0FD003DF60F /* util.swift in Sources */,
 				951F4A9B2B29CCD1003DF60F /* ContentView.swift in Sources */,
 				951F4AA92B29DBC8003DF60F /* GridView.swift in Sources */,
 				951F4A992B29CCD1003DF60F /* PaginationSampleSwiftUIApp.swift in Sources */,
+				953397242B3181F700B1E008 /* BottomSheetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +378,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		95C26B3B2B32EF3100938C95 /* XCRemoteSwiftPackageReference "PagingView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ericlewis/PagingView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+		95C26B3E2B32FC8F00938C95 /* XCRemoteSwiftPackageReference "SwiftUIPager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fermoya/SwiftUIPager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		95C26B3C2B32EF3100938C95 /* PagingView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95C26B3B2B32EF3100938C95 /* XCRemoteSwiftPackageReference "PagingView" */;
+			productName = PagingView;
+		};
+		95C26B3F2B32FC8F00938C95 /* SwiftUIPager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95C26B3E2B32FC8F00938C95 /* XCRemoteSwiftPackageReference "SwiftUIPager" */;
+			productName = SwiftUIPager;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 951F4A8D2B29CCD1003DF60F /* Project object */;
 }

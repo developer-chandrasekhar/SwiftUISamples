@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "pagingview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ericlewis/PagingView",
+      "state" : {
+        "revision" : "2282f6aea2d7c701687caac627547b01b3be1309",
+        "version" : "0.1.1"
+      }
+    },
+    {
+      "identity" : "swiftuipager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/fermoya/SwiftUIPager",
+      "state" : {
+        "revision" : "4ddc04c801aac143090bb14cf26603a3bf9c74cb",
+        "version" : "2.5.0"
+      }
+    }
+  ],
+  "version" : 2
+}
