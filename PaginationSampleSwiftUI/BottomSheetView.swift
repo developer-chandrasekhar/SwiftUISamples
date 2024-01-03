@@ -7,6 +7,33 @@
 
 import SwiftUI
 
+private enum HomeCardType {
+   
+    case food
+    case grocery
+    
+    var title: String {
+        switch self {
+        case .food: return "Food"
+        case .grocery: return "Grocery"
+        }
+    }
+    
+    var subTitle: String {
+        switch self {
+        case .food: return "Great Restaurants in your towr!"
+        case .grocery: return "Great shops in your towr!"
+        }
+    }
+    
+    var color: Color {
+        switch self {
+        case .food: return ColorUtil.primaryThemeColor
+        case .grocery: return .orange
+        }
+    }
+}
+
 struct BottomSheetView: View {
     
     @State private var isBottomSheetShown = false
@@ -14,6 +41,9 @@ struct BottomSheetView: View {
     
     var body: some View {
         VStack {
+
+            cardView(cardType: .food)
+            cardView(cardType: .grocery)
             
             Button(action: {
                 isBottomSheetShown.toggle()
@@ -54,12 +84,36 @@ struct BottomSheetView: View {
         ScrollView {
             VStack {
                 ForEach(10..<20) { num in
-                    Text("num ")
+                    Text("num \(num)")
                 }
             }.frame(width: UIScreen.main.bounds.width)
         }.background(
             Color.yellow
         )
+    }
+    
+    private func cardView(cardType: HomeCardType) -> some View {
+        ZStack {
+            Color.white
+            VStack(alignment: .leading) {
+                RoundedRectangle(cornerRadius: 8)
+                    .foregroundColor(cardType.color)
+                Text(cardType.title)
+                    .bold()
+                    .font(.largeTitle)
+                    .foregroundStyle(cardType.color)
+                Text(cardType.subTitle)
+                    .font(.callout)
+                    .foregroundStyle(.black.opacity(0.6))
+
+                Spacer()
+            }
+            .padding()
+            
+        }
+        .cornerRadius(8)
+        .shadow(color: .gray.opacity(0.5), radius: 4, y: 5)
+        .frame(width: 275, height: 275)
     }
 }
 
@@ -91,3 +145,4 @@ struct BottomSheet<Content: View>: View {
         }
     }
 }
+
