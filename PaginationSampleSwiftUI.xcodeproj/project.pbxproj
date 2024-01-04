@@ -19,6 +19,7 @@
 		95C26B3D2B32EF3100938C95 /* PagingView in Frameworks */ = {isa = PBXBuildFile; productRef = 95C26B3C2B32EF3100938C95 /* PagingView */; };
 		95C26B402B32FC8F00938C95 /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = 95C26B3F2B32FC8F00938C95 /* SwiftUIPager */; };
 		95C26B422B4535AB00938C95 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C26B412B4535AB00938C95 /* TabBarView.swift */; };
+		95C26B442B45908B00938C95 /* CellSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C26B432B45908B00938C95 /* CellSample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		953397232B3181F700B1E008 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		95C26B392B32E9DE00938C95 /* PagingScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingScrollView.swift; sourceTree = "<group>"; };
 		95C26B412B4535AB00938C95 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		95C26B432B45908B00938C95 /* CellSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				953397212B30492600B1E008 /* MenuContainerView.swift */,
 				953397232B3181F700B1E008 /* BottomSheetView.swift */,
 				95C26B412B4535AB00938C95 /* TabBarView.swift */,
+				95C26B432B45908B00938C95 /* CellSample.swift */,
 				951F4AA62B29D0FD003DF60F /* util.swift */,
 				951F4A9C2B29CCD2003DF60F /* Assets.xcassets */,
 				951F4A9E2B29CCD2003DF60F /* Preview Content */,
@@ -173,6 +176,7 @@
 				951F4AA72B29D0FD003DF60F /* util.swift in Sources */,
 				951F4A9B2B29CCD1003DF60F /* ContentView.swift in Sources */,
 				951F4AA92B29DBC8003DF60F /* GridView.swift in Sources */,
+				95C26B442B45908B00938C95 /* CellSample.swift in Sources */,
 				951F4A992B29CCD1003DF60F /* PaginationSampleSwiftUIApp.swift in Sources */,
 				953397242B3181F700B1E008 /* BottomSheetView.swift in Sources */,
 			);
